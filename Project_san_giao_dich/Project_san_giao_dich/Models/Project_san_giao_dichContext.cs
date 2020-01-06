@@ -18,6 +18,10 @@ namespace Project_san_giao_dich.Models
         public Project_san_giao_dichContext() : base("name=Project_san_giao_dichContext")
         {
         }
+        public static Project_san_giao_dichContext Create()
+        {
+            return new Project_san_giao_dichContext();
+        }
 
         public System.Data.Entity.DbSet<Project_san_giao_dich.Models.Market> Markets { get; set; }
 
